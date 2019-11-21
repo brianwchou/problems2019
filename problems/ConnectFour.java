@@ -9,10 +9,10 @@ public class ConnectFour {
         boardWithSolution[2][2] = true;
         boardWithSolution[2][3] = true;
 
-        assert connectfour(boardWithSolution, 4) : "Cannot find solution on board";
+        assert connectfour(boardWithSolution, 4) == true : "Cannot find solution on board";
 
         boolean[][] emptyBoard = new boolean[7][6];
-        assert !connectfour(emptyBoard, 4) : "Should return false on emptyBoard";
+        assert connectfour(emptyBoard, 4) == false : "Should return false on emptyBoard";
     }
 
     // we are given NxM board
