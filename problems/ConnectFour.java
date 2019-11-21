@@ -1,13 +1,25 @@
-package com.chapter.one;
+package problems;
 
 public class ConnectFour {
+
+    public static void main(String[] args) {
+        boolean[][] boardWithSolution = new boolean[7][6];
+        boardWithSolution[2][0] = true;
+        boardWithSolution[2][1] = true;
+        boardWithSolution[2][2] = true;
+        boardWithSolution[2][3] = true;
+
+        assert connectfour(boardWithSolution, 4) : "Cannot find solution on board";
+
+        boolean[][] emptyBoard = new boolean[7][6];
+        assert !connectfour(emptyBoard, 4) : "Should return false on emptyBoard";
+    }
 
     // we are given NxM board
     public static boolean connectfour(boolean[][] board, int k) {
         
         for (int x = 0; x < board.length; x++) { // N xaxis
             for (int y = 0; y < board[x].length; y++) { // M yaxis
-
                 boolean top = y + k < board[x].length;
                 boolean bottom = y - k >= 0;
 
