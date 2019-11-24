@@ -30,7 +30,7 @@ public class GenerateParens {
         }
 
         if (left < right && right > 0) {
-                topDown(list, gen + ")", left, right - 1);
+            topDown(list, gen + ")", left, right - 1);
         }        
     }
 }
