@@ -28,8 +28,7 @@ public class DivideTwoIntegers {
         assert solution == 2147483647;
 
     }
-
-
+    
     public static int divide(int dividend, int divisor){
         if (divisor == 0) {
             throw new IllegalArgumentException("");
