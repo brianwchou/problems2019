@@ -11,7 +11,6 @@ public class GenerateParens {
         System.out.println(list.toString());
     }
 
-
     public static ArrayList<String> topDown(int n) {
 
         ArrayList<String> aList = new ArrayList<>();

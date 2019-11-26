@@ -3,17 +3,17 @@ import java.util.Arrays;
 public class NextPermutation {
 
     public static void main(String[] args) {
-        int[] array = {5, 4, 7, 5, 3, 2};
+        int[] array = {1,2,3,4};
         // 5, 4, 7, 5, 3, 2
 
-        int[] solution = nextPermutation(array);
-        System.out.println(Arrays.toString(solution));
+        // int[] solution = nextPermutation(array);
+        // System.out.println(Arrays.toString(solution));
         
-        
+        int[] solution;
         int n = 25;
         while (n-- > 0) {
-            System.out.println(Arrays.toString(solution));
             solution = nextPermutation(array);
+            System.out.println(Arrays.toString(solution));
         }
     }
 

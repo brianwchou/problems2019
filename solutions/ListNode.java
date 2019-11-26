@@ -28,6 +28,10 @@ public class ListNode {
         return sb.toString();
     }
 
+    public static ListNode createHead(int value) {
+        return new ListNode(value);
+    }
+
     public ListNode addNode(int value) {
         ListNode next = new ListNode(value);
         this.next = next;
