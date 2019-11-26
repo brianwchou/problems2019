@@ -6,6 +6,11 @@ public class ListNode {
         this.value = value;
     }
 
+    /*
+        Methods below are used for easy test writing.
+        Not allowed to used for algorithms
+    */    
+
     public boolean equals(ListNode node) {
         ListNode cursor = this;
         
@@ -18,6 +23,17 @@ public class ListNode {
         }
         return true;
     }
+
+    public int size() {
+        int count = 0;
+        
+        for (ListNode cursor = this; cursor != null; cursor = cursor.next) {
+            count++;
+        }
+
+        return count;
+    }
+
     public String toString() {
         StringBuilder sb = new StringBuilder();
         ListNode cursor = this;

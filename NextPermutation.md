@@ -9,7 +9,7 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 [3,2,1] → [1,2,3]
 [1,1,5] → [1,5,1]
 
-## Notes about the problem
+## Notes
 This problem was challenging and took a few hours to recognize the pattern for the next permutations.
 
 Key concepts:
@@ -35,7 +35,7 @@ ascending order is also sorted order
 [1, 2, 3, 4]
 [1, 2, 4, 3]
 
-## Solution Exlpaination
+## Runtime Complexity | Space Complexity
 
 
 
