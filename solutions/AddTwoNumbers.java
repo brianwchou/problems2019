@@ -47,7 +47,7 @@ public class AddTwoNumbers{
             l1 = l1.next;
             l2 = l2.next;
         }
-
+        
         ListNode listToEmpty = (l1 != null) ? l1 : l2;
 
         while (listToEmpty != null) {
